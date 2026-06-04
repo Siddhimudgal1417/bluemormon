@@ -42,7 +42,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
           >
-            Curated travel experiences designed for wanderers seeking authentic connections, breathtaking destinations, and moments that matter.
+            Curated travel experiences designed for Indian travelers seeking authentic connections, breathtaking destinations, and moments that matter.
           </motion.p>
 
           <motion.div
@@ -54,7 +54,7 @@ export default function Hero() {
             <MotionLink
               to="/packages"
               {...hoverLift}
-              className="btn btn-primary bg-coral-500 hover:bg-coral-600 text-white border-0"
+              className="btn btn-primary bg-sunset-gold-500 hover:bg-sunset-gold-600 text-white border-0"
             >
               Explore Packages <ArrowRight size={18} />
             </MotionLink>

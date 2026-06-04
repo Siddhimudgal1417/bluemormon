@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { Clock, Users, Star, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { Reveal, MotionImage, itemFadeUp, staggerContainer, hoverLift } from '../lib/motion';
+import { Reveal, MotionImage, MotionLink, itemFadeUp, staggerContainer, hoverLift } from '../lib/motion';
 
 const packages = [
   {
@@ -90,7 +89,9 @@ const packages = [
   },
 ];
 
-const MotionLink = motion(Link);
+function formatINR(amount: number) {
+  return `₹${amount.toLocaleString('en-IN')}`;
+}
 
 function PackageCard({ pkg, index }: { pkg: typeof packages[0]; index: number }) {
   return (
@@ -113,8 +114,8 @@ function PackageCard({ pkg, index }: { pkg: typeof packages[0]; index: number })
         </span>
 
         <div className="absolute bottom-5 right-5 bg-white/95 backdrop-blur-sm text-navy-900 rounded-xl px-4 py-3 text-center shadow-premium-lg border border-white/20 group-hover:bg-white group-hover:shadow-premium transition-all duration-500">
-          <div className="text-xs text-gray-500 font-semibold tracking-wide">FROM</div>
-          <div className="text-2xl font-display font-black leading-tight text-coral-500">${pkg.price.toLocaleString()}</div>
+          <div className="text-xs text-gray-500 font-semibold tracking-wide">STARTING AT</div>
+          <div className="text-2xl font-display font-black leading-tight text-sunset-gold-600">{formatINR(pkg.price)}</div>
         </div>
       </div>
 
@@ -176,11 +177,11 @@ export default function PackagesPage() {
     <div className="min-h-screen bg-gray-50 pt-32 pb-24">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="text-center mb-20">
-          <span className="text-coral-500 text-xs font-black uppercase tracking-widest inline-block mb-4 px-4 py-2 bg-coral-500/10 rounded-full">
+          <span className="text-sunset-gold-700 text-xs font-black uppercase tracking-widest inline-block mb-4 px-4 py-2 bg-sunset-gold-100 rounded-full">
             Curated Trips
           </span>
           <h1 className="font-display font-black text-navy-900 text-6xl md:text-7xl lg:text-8xl mt-4 leading-tight tracking-tight">
-            Our <span className="italic text-coral-500">Signature</span> Packages
+            Our <span className="italic text-sunset-gold-600">Signature</span> Packages
           </h1>
           <p className="text-gray-600 text-lg mt-6 max-w-2xl mx-auto leading-relaxed font-light">
             Every trip is crafted with precision and care. No cookie-cutter tours — just unforgettable experiences designed specifically for you.
@@ -229,7 +230,7 @@ export default function PackagesPage() {
               title: 'Expert Local Guides',
               desc: 'Meet passionate locals who know their destinations inside and out.',
             },
-          ].map((info, idx) => (
+          ].map((info) => (
             <motion.div
               key={info.title}
               variants={itemFadeUp}

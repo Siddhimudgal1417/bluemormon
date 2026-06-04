@@ -68,7 +68,7 @@ export default function Navbar() {
           <MotionLink
             to="/contact"
             {...hoverLift}
-            className="btn btn-primary text-sm"
+            className="btn btn-primary bg-sunset-gold-500 hover:bg-sunset-gold-600 text-white text-sm"
             onClick={() => setIsOpen(false)}
           >
             Plan Your Trip
@@ -108,7 +108,7 @@ export default function Navbar() {
               <MotionLink
                 to="/contact"
                 {...hoverLift}
-                className="block btn btn-primary w-full text-center"
+                className="block btn bg-sunset-gold-500 hover:bg-sunset-gold-600 text-white w-full text-center"
                 onClick={() => setIsOpen(false)}
               >
                 Plan Your Trip

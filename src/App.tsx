@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import QuickInquiryWidget from './components/QuickInquiryWidget';
 import Home from './pages/Home';
 import DestinationsPage from './pages/Destinations';
 import PackagesPage from './pages/Packages';
@@ -36,6 +37,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <AppRoutes />
+      <QuickInquiryWidget />
     </BrowserRouter>
   );
 }

@@ -1,9 +1,11 @@
 import { motion, useInView, useReducedMotion, Variants } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import { Link, type LinkProps } from 'react-router-dom';
 
 const premiumTiming = {
   duration: 0.7,
-  ease: [0.22, 1, 0.36, 1],
+  // Use a CSS cubic-bezier string to satisfy framer-motion typings
+  ease: 'cubic-bezier(0.22, 1, 0.36, 1)',
 };
 
 export const pageVariants: Variants = {
@@ -96,10 +98,12 @@ export function MotionImage(props: React.ComponentPropsWithoutRef<'img'>) {
       initial={shouldReduceMotion ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.02 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.9, ease: premiumTiming.ease }}
+      transition={{ duration: 0.9, ease: premiumTiming.ease as any }}
     />
   );
 }
+
+export const MotionLink = motion<LinkProps>(Link);
 
 export function AnimatedCounter({
   target,
