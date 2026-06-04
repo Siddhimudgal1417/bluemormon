@@ -39,16 +39,16 @@ export default function WhoWeAre() {
               />
             </div>
 
-            <div className="absolute top-8 -right-6 bg-coral-500 text-white rounded-2xl px-5 py-4 shadow-xl shadow-coral-500/30 hidden lg:block">
+            <div className="absolute top-8 -right-6 bg-royal-blue-500 text-white rounded-2xl px-5 py-4 shadow-xl shadow-coral-500/30 hidden lg:block">
               <div className="text-3xl font-display font-black">
                 <AnimatedCounter target={15} suffix="+" className="leading-none" />
               </div>
-              <div className="text-xs font-medium text-coral-100 mt-0.5">Years crafting<br />journeys</div>
+              <div className="text-xs font-medium text-royal-blue-100 mt-0.5">Years crafting<br />journeys</div>
             </div>
           </Reveal>
 
           <Reveal className="space-y-8">
-            <p className="text-small text-coral-500 mb-4">ABOUT US</p>
+            <p className="text-small text-royal-blue-500 mb-4">ABOUT US</p>
             <h2 className="mb-6">
               Luxury Travel With <span className="font-light">Authenticity</span>
             </h2>
@@ -69,7 +69,7 @@ export default function WhoWeAre() {
                 'Exclusive experiences not found elsewhere',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="text-coral-500 font-bold mt-1">✓</span>
+                  <span className="text-royal-blue-500 font-bold mt-1">✓</span>
                   <span className="text-muted">{item}</span>
                 </li>
               ))}
@@ -101,7 +101,7 @@ export default function WhoWeAre() {
         >
           {stats.map((stat) => (
             <motion.div key={stat.label} variants={itemFadeUp} className="rounded-3xl bg-white p-8 shadow-premium border border-gray-100">
-              <div className="text-4xl font-bold text-coral-500 mb-2">
+              <div className="text-4xl font-bold text-royal-blue-500 mb-2">
                 <AnimatedCounter target={stat.end} suffix={stat.suffix} className="inline-block" />
               </div>
               <p className="text-muted font-light">{stat.label}</p>

@@ -119,7 +119,7 @@ export default function LeadPopup() {
               <div className="flex gap-3">
                 <button
                   type="submit"
-                  className="flex-1 inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-sunset-gold-500 to-coral-500 px-4 py-3 text-sm font-semibold text-white shadow-lg"
+                  className="flex-1 inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-royal-blue-500 to-royal-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-lg"
                 >
                   Plan My Trip
                 </button>

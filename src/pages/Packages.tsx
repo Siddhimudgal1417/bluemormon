@@ -13,7 +13,7 @@ const packages = [
     reviews: 234,
     price: 3_490,
     tag: 'Bestseller',
-    tagColor: 'bg-coral-500',
+    tagColor: 'bg-royal-blue-800',
     img: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
     highlights: ['Overwater bungalow', 'Dolphin cruise', 'Snorkeling reef'],
   },
@@ -27,7 +27,7 @@ const packages = [
     reviews: 187,
     price: 2_190,
     tag: 'Most Popular',
-    tagColor: 'bg-ocean-500',
+    tagColor: 'bg-royal-blue-800',
     img: 'https://images.pexels.com/photos/2474690/pexels-photo-2474690.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
     highlights: ['Sunrise Volcano trek', 'Ubud rice terraces', 'Spa & Yoga retreat'],
   },
@@ -41,7 +41,7 @@ const packages = [
     reviews: 312,
     price: 4_100,
     tag: 'Luxury',
-    tagColor: 'bg-sand-600',
+    tagColor: 'bg-royal-blue-800',
     img: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
     highlights: ['Cave suite hotel', 'Catamaran sunset sail', 'Private wine tasting'],
   },
@@ -55,7 +55,7 @@ const packages = [
     reviews: 156,
     price: 1_890,
     tag: 'Adventure',
-    tagColor: 'bg-ocean-600',
+    tagColor: 'bg-royal-blue-800',
     img: 'https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
     highlights: ['Speedboat transfers', 'Kayak sea caves', 'Full moon beach party'],
   },
@@ -69,7 +69,7 @@ const packages = [
     reviews: 98,
     price: 3_750,
     tag: 'New',
-    tagColor: 'bg-coral-600',
+    tagColor: 'bg-royal-blue-800',
     img: 'https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
     highlights: ['Positano villa stay', 'Limoncello tasting', 'Capri day trip'],
   },
@@ -83,7 +83,7 @@ const packages = [
     reviews: 73,
     price: 2_650,
     tag: 'Hidden Gem',
-    tagColor: 'bg-navy-700',
+    tagColor: 'bg-royal-blue-800',
     img: 'https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
     highlights: ['Stone Town tour', 'Spice farm visit', 'Dhow sunset cruise'],
   },
@@ -115,7 +115,7 @@ function PackageCard({ pkg, index }: { pkg: typeof packages[0]; index: number })
 
         <div className="absolute bottom-5 right-5 bg-white/95 backdrop-blur-sm text-navy-900 rounded-xl px-4 py-3 text-center shadow-premium-lg border border-white/20 group-hover:bg-white group-hover:shadow-premium transition-all duration-500">
           <div className="text-xs text-gray-500 font-semibold tracking-wide">STARTING AT</div>
-          <div className="text-2xl font-display font-black leading-tight text-sunset-gold-600">{formatINR(pkg.price)}</div>
+          <div className="text-2xl font-display font-black leading-tight text-royal-blue-600">{formatINR(pkg.price)}</div>
         </div>
       </div>
 
@@ -141,12 +141,12 @@ function PackageCard({ pkg, index }: { pkg: typeof packages[0]; index: number })
         <p className="text-gray-600 text-sm mt-1 mb-6 font-light leading-relaxed">{pkg.subtitle}</p>
 
         <div className="flex items-center gap-6 text-xs text-gray-500 font-semibold mb-6 pb-6 border-b border-gray-200/50">
-          <span className="flex items-center gap-2 hover:text-coral-500 transition-colors">
-            <Clock className="w-4 h-4 text-coral-500" />
+          <span className="flex items-center gap-2 hover:text-royal-blue-500 transition-colors">
+            <Clock className="w-4 h-4 text-royal-blue-500" />
             <span className="tracking-wide">{pkg.duration}</span>
           </span>
-          <span className="flex items-center gap-2 hover:text-coral-500 transition-colors">
-            <Users className="w-4 h-4 text-coral-500" />
+          <span className="flex items-center gap-2 hover:text-royal-blue-500 transition-colors">
+            <Users className="w-4 h-4 text-royal-blue-500" />
             <span className="tracking-wide">{pkg.group}</span>
           </span>
         </div>
@@ -154,8 +154,8 @@ function PackageCard({ pkg, index }: { pkg: typeof packages[0]; index: number })
         <ul className="space-y-2.5 mb-7">
           {pkg.highlights.map((h) => (
             <li key={h} className="flex items-start gap-3 text-sm text-gray-700 font-light leading-relaxed">
-              <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-br from-coral-400 to-coral-500 flex-shrink-0 mt-1.5 shadow-sm" />
-              <span className="group-hover:text-coral-600 transition-colors">{h}</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-br from-royal-blue-400 to-royal-blue-500 flex-shrink-0 mt-1.5 shadow-sm" />
+              <span className="group-hover:text-royal-blue-600 transition-colors">{h}</span>
             </li>
           ))}
         </ul>
@@ -163,7 +163,7 @@ function PackageCard({ pkg, index }: { pkg: typeof packages[0]; index: number })
         <MotionLink
           to="/contact"
           {...hoverLift}
-          className="w-full flex items-center justify-center gap-2 py-3.5 bg-navy-900 hover:bg-coral-500 text-white font-semibold text-sm rounded-2xl transition-all duration-500 group-hover:shadow-lg group-hover:shadow-coral-500/20 active:scale-95 tracking-wide uppercase"
+          className="w-full flex items-center justify-center gap-2 py-3.5 bg-navy-900 hover:bg-royal-blue-500 text-white font-semibold text-sm rounded-2xl transition-all duration-500 group-hover:shadow-lg group-hover:shadow-coral-500/20 active:scale-95 tracking-wide uppercase"
         >
           View Details <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
         </MotionLink>
@@ -177,11 +177,11 @@ export default function PackagesPage() {
     <div className="min-h-screen bg-gray-50 pt-32 pb-24">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="text-center mb-20">
-          <span className="text-sunset-gold-700 text-xs font-black uppercase tracking-widest inline-block mb-4 px-4 py-2 bg-sunset-gold-100 rounded-full">
+          <span className="text-royal-blue-700 text-xs font-black uppercase tracking-widest inline-block mb-4 px-4 py-2 bg-royal-blue-100 rounded-full">
             Curated Trips
           </span>
           <h1 className="font-display font-black text-navy-900 text-6xl md:text-7xl lg:text-8xl mt-4 leading-tight tracking-tight">
-            Our <span className="italic text-sunset-gold-600">Signature</span> Packages
+            Our <span className="italic text-royal-blue-600">Signature</span> Packages
           </h1>
           <p className="text-gray-600 text-lg mt-6 max-w-2xl mx-auto leading-relaxed font-light">
             Every trip is crafted with precision and care. No cookie-cutter tours — just unforgettable experiences designed specifically for you.
@@ -234,10 +234,10 @@ export default function PackagesPage() {
             <motion.div
               key={info.title}
               variants={itemFadeUp}
-              className="space-y-4 group hover:bg-coral-500/5 p-4 rounded-2xl transition-colors duration-300"
+              className="space-y-4 group hover:bg-royal-blue-500/5 p-4 rounded-2xl transition-colors duration-300"
             >
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 rounded-full bg-gradient-to-br from-coral-500 to-coral-600 shadow-sm group-hover:scale-125 transition-transform duration-300" />
+                <div className="w-3 h-3 rounded-full bg-gradient-to-br from-royal-blue-500 to-royal-blue-600 shadow-sm group-hover:scale-125 transition-transform duration-300" />
                 <h4 className="font-semibold text-navy-900 text-lg tracking-tight">{info.title}</h4>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed font-light">{info.desc}</p>

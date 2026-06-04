@@ -34,7 +34,7 @@ export default function Testimonials() {
     <section className="section bg-white">
       <div className="container-premium">
         <Reveal className="text-center mb-16">
-          <p className="text-small text-coral-500 mb-4">GUEST EXPERIENCES</p>
+          <p className="text-small text-royal-blue-500 mb-4">GUEST EXPERIENCES</p>
           <h2 className="mb-6">Travelers' Stories</h2>
           <p className="text-lg text-muted max-w-2xl mx-auto">
             Join thousands who have discovered the world through Blue Mormon
@@ -57,7 +57,7 @@ export default function Testimonials() {
             >
               <div className="flex gap-1 mb-4">
                 {Array(t.rating).fill(0).map((_, i) => (
-                  <Star key={i} size={16} className="text-coral-500 fill-coral-500" />
+                  <Star key={i} size={16} className="text-royal-blue-500 fill-royal-blue-500" />
                 ))}
               </div>
 

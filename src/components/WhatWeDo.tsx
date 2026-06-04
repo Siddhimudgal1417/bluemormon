@@ -43,7 +43,7 @@ export default function WhatWeDo() {
     <section className="section bg-white">
       <div className="container-premium">
         <Reveal className="text-center mb-16">
-          <p className="text-small text-coral-500 mb-4">TRAVEL STYLES</p>
+          <p className="text-small text-royal-blue-500 mb-4">TRAVEL STYLES</p>
           <h2 className="mb-6">Experience Our Collection</h2>
           <p className="text-lg text-muted max-w-2xl mx-auto">
             Whether you seek adventure, tranquility, or cultural immersion, we have the perfect journey for you.
@@ -63,11 +63,11 @@ export default function WhatWeDo() {
               <motion.div
                 key={idx}
                 variants={itemFadeUp}
-                className="card p-8 bg-white rounded-3xl shadow-premium border border-gray-100 hover:border-coral-200 transition-all duration-300"
+                className="card p-8 bg-white rounded-3xl shadow-premium border border-gray-100 hover:border-royal-blue-200 transition-all duration-300"
                 {...hoverLift}
               >
                 <div className="mb-6">
-                  <Icon className="w-12 h-12 text-coral-500" strokeWidth={1.5} />
+                  <Icon className="w-12 h-12 text-royal-blue-500" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{exp.title}</h3>
                 <p className="text-muted font-light">{exp.description}</p>

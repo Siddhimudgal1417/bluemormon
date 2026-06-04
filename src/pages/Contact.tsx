@@ -47,8 +47,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <Reveal className="text-center mb-20" style={{ maxWidth: '48rem', margin: '0 auto' }}>
           <div className="inline-flex items-center gap-2 mb-4 justify-center">
-            <div className="w-1 h-6 bg-gradient-to-b from-sunset-gold-600 to-sunset-gold-300" />
-            <span className="text-sunset-gold-600 text-sm font-bold uppercase tracking-widest">Contact</span>
+            <div className="w-1 h-6 bg-gradient-to-b from-royal-blue-600 to-royal-blue-300" />
           </div>
 
           <h1 className="font-display font-black text-navy-900 text-6xl md:text-7xl mt-3 leading-tight">
@@ -210,7 +209,7 @@ export default function ContactPage() {
                     <motion.button
                       type="submit"
                       variants={itemFadeUp}
-                      className="w-full flex items-center justify-center gap-2 py-4 bg-gradient-to-r from-sunset-gold-500 to-sunset-gold-600 hover:from-sunset-gold-400 hover:to-sunset-gold-500 text-navy-900 font-bold rounded-xl transition-all duration-300 active:scale-95 shadow-lg hover:shadow-xl shadow-sunset-gold-500/30"
+                      className="w-full flex items-center justify-center gap-2 py-4 bg-gradient-to-r from-royal-blue-500 to-royal-blue-600 hover:from-royal-blue-400 hover:to-royal-blue-500 text-navy-900 font-bold rounded-xl transition-all duration-300 active:scale-95 shadow-lg hover:shadow-xl shadow-sunset-gold-500/30"
                     >
                       Send My Request <Send className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </motion.button>

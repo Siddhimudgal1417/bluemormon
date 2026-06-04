@@ -142,9 +142,9 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6">
           {/* Hero Section */}
           <Reveal className="mb-20 text-center">
-            <span className="text-coral-500 text-xs font-bold uppercase tracking-widest">Our Services</span>
-            <h1 className="font-display font-black text-navy-900 text-6xl md:text-7xl mt-3 leading-tight">
-              Travel Services Designed Around <span className="italic text-coral-500">You</span>
+            <span className="text-royal-blue-500 text-xs font-bold uppercase tracking-widest">Our Services</span>
+            <h1 className="font-display font-black text-navy-900 text-5xl md:text-6xl leading-tight mb-6">
+              Travel Services Designed Around <span className="italic text-royal-blue-500">You</span>
             </h1>
             <p className="text-gray-600 text-xl mt-6 max-w-3xl mx-auto leading-relaxed">
               From planning and bookings to guided tours and travel assistance, Blue Mormon takes care of every detail of your journey.
@@ -168,8 +168,8 @@ export default function ServicesPage() {
                     variants={itemFadeUp}
                     className="group p-8 rounded-3xl border border-gray-200 hover:border-coral-200 bg-white shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                   >
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-coral-100 to-sunset-gold-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-7 h-7 text-coral-500" />
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-royal-blue-100 to-royal-blue-200 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-7 h-7 text-royal-blue-500" />
                     </div>
                     <h3 className="font-semibold text-navy-900 text-lg mb-3">{service.title}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
@@ -182,7 +182,7 @@ export default function ServicesPage() {
           {/* Why Choose Us Section */}
           <Reveal className="mb-24 py-16 border-y border-gray-200">
             <div className="text-center mb-12">
-              <span className="text-coral-500 text-xs font-bold uppercase tracking-widest">Why Choose Us</span>
+              <span className="text-royal-blue-500 text-xs font-bold uppercase tracking-widest">Why Choose Us</span>
               <h2 className="font-display font-black text-navy-900 text-4xl md:text-5xl mt-4 leading-tight">
                 The Blue Mormon Advantage
               </h2>
@@ -199,8 +199,8 @@ export default function ServicesPage() {
                 const Icon = item.icon;
                 return (
                   <motion.div key={item.title} variants={itemFadeUp} className="text-center">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-sunset-gold-100 to-coral-100 flex items-center justify-center mx-auto mb-4">
-                      <Icon className="w-8 h-8 text-sunset-gold-600" />
+                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-royal-blue-100 to-royal-blue-200 flex items-center justify-center mx-auto mb-4">
+                      <Icon className="w-8 h-8 text-royal-blue-600" />
                     </div>
                     <h3 className="font-semibold text-navy-900 mb-2">{item.title}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
@@ -213,7 +213,7 @@ export default function ServicesPage() {
           {/* Find My Booking Section */}
           <Reveal className="mb-24 max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <span className="text-coral-500 text-xs font-bold uppercase tracking-widest">Booking Assistance</span>
+              <span className="text-royal-blue-500 text-xs font-bold uppercase tracking-widest">Booking Assistance</span>
               <h2 className="font-display font-black text-navy-900 text-4xl md:text-5xl mt-4 leading-tight">
                 Find My Booking
               </h2>
@@ -231,7 +231,7 @@ export default function ServicesPage() {
             >
               {formSubmitted ? (
                 <div className="text-center py-12">
-                  <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-sunset-gold-100 text-sunset-gold-600">
+                  <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-royal-blue-100 text-royal-blue-600">
                     <CheckCircle2 size={40} />
                   </div>
                   <h3 className="text-2xl font-semibold text-navy-900 mb-2">Inquiry Received</h3>
@@ -318,7 +318,7 @@ export default function ServicesPage() {
 
                   <button
                     type="submit"
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-sunset-gold-500 to-coral-500 px-6 py-4 text-lg font-semibold text-white shadow-lg shadow-coral-500/30 transition hover:opacity-95 active:scale-95"
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-royal-blue-500 to-royal-blue-600 px-6 py-4 text-lg font-semibold text-white shadow-lg shadow-coral-500/30 transition hover:opacity-95 active:scale-95"
                   >
                     Retrieve My Booking Details
                   </button>

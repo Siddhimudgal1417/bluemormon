@@ -40,7 +40,7 @@ function DestinationCard({ dest, index }: { dest: typeof allDestinations[0]; ind
       </div>
       <h3 className="font-display font-bold text-navy-900 text-2xl mb-2">{dest.name}</h3>
       <div className="flex items-center gap-2">
-        <span className="px-3 py-1 bg-coral-100 text-coral-600 text-xs font-semibold rounded-full">{dest.region}</span>
+        <span className="px-3 py-1 bg-royal-blue-100 text-royal-blue-600 text-xs font-semibold rounded-full">{dest.region}</span>
         <span className="px-3 py-1 bg-ocean-100 text-ocean-600 text-xs font-semibold rounded-full">{dest.vibe}</span>
       </div>
     </motion.div>
@@ -63,9 +63,9 @@ export default function Destinations() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="text-center mb-16">
-          <span className="text-coral-500 text-xs font-bold uppercase tracking-widest">Explore</span>
+          <span className="text-royal-blue-500 text-xs font-bold uppercase tracking-widest">Explore</span>
           <h1 className="font-display font-black text-navy-900 text-6xl md:text-7xl mt-3 leading-tight">
-            80+ <span className="italic text-coral-500">Destinations</span>
+            80+ <span className="italic text-royal-blue-500">Destinations</span>
           </h1>
           <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
             From tropical islands to mountain peaks, discover your next adventure.
@@ -80,7 +80,7 @@ export default function Destinations() {
               placeholder="Search destinations..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3.5 border border-gray-200 rounded-2xl focus:outline-none focus:border-coral-500 focus:ring-2 focus:ring-coral-100 text-navy-900 placeholder:text-gray-400 transition-all"
+              className="w-full pl-12 pr-4 py-3.5 border border-gray-200 rounded-2xl focus:outline-none focus:border-royal-blue-500 focus:ring-2 focus:ring-royal-blue-100 text-navy-900 placeholder:text-gray-400 transition-all"
             />
           </div>
 
@@ -97,7 +97,7 @@ export default function Destinations() {
                   onClick={() => setSelectedRegion(r)}
                   className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${
                     selectedRegion === r
-                      ? 'bg-coral-500 text-white'
+                      ? 'bg-royal-blue-500 text-white'
                       : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
                 >
@@ -150,12 +150,12 @@ export default function Destinations() {
           </div>
         )}
 
-        <Reveal className="mt-20 p-10 bg-gradient-to-r from-coral-500 to-ocean-500 rounded-3xl text-center text-white">
+        <Reveal className="mt-20 p-10 bg-gradient-to-r from-royal-blue-500 to-ocean-500 rounded-3xl text-center text-white">
           <h3 className="font-display font-bold text-2xl mb-2">Can't decide?</h3>
           <p className="text-white/80 mb-6">Let our experts craft a custom itinerary just for you.</p>
           <a
             href="/contact"
-            className="inline-block px-8 py-3 bg-white text-coral-500 font-bold rounded-full hover:bg-gray-100 transition-colors"
+            className="inline-block px-8 py-3 bg-white text-royal-blue-500 font-bold rounded-full hover:bg-gray-100 transition-colors"
           >
             Plan with Us
           </a>

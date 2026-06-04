@@ -11,7 +11,7 @@ const premiumTiming: Transition = {
 export const pageVariants: Variants = {
   initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0, transition: premiumTiming },
-  exit: { opacity: 0, y: -20, transition: { duration: 0.45, ease: 'easeInOut' } },
+  exit: { opacity: 0, y: -20, transition: { duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] as any } },
 };
 
 export const revealVariants: Variants = {
@@ -38,7 +38,7 @@ export const hoverLift = {
   whileHover: {
     y: -4,
     scale: 1.01,
-    transition: { duration: 0.25, ease: 'easeOut' },
+    transition: { duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] as any },
   },
   whileTap: { scale: 0.98 },
 };

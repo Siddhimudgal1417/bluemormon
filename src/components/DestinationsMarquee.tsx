@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Reveal, MotionImage, hoverLift, itemFadeUp, staggerContainer } from '../lib/motion';
+import { Reveal, MotionImage, hoverLift, itemFadeUp } from '../lib/motion';
 
 const MotionLink = motion(Link);
 

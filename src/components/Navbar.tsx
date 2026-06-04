@@ -40,11 +40,11 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50"
     >
       <div className="container-premium flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center gap-2 font-display font-bold text-2xl transition-all duration-300">
-          <div className="w-8 h-8 bg-coral-500 rounded-full flex items-center justify-center text-white text-xs font-black">
+        <Link to="/" className="flex items-center gap-3 font-display font-bold text-2xl transition-all duration-300">
+          <div className="w-8 h-8 bg-royal-blue-900 rounded-full flex items-center justify-center text-white text-xs font-black">
             BM
           </div>
-          <span className={`hidden md:inline transition-colors duration-300 ${isScrolled ? 'text-navy-900' : 'text-white'}`}>
+          <span className={`transition-colors duration-300 ${isScrolled ? 'text-navy-900' : 'text-white'}`}>
             Blue Mormon
           </span>
         </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
               to={link.href}
               {...hoverLift}
               className={`text-sm font-medium transition-colors duration-300 ${
-                isScrolled ? 'text-navy-900 hover:text-coral-500' : 'text-white hover:text-coral-300'
+                isScrolled ? 'text-navy-900 hover:text-royal-blue-500' : 'text-white hover:text-royal-blue-300'
               }`}
               onClick={() => setIsOpen(false)}
             >
@@ -69,7 +69,7 @@ export default function Navbar() {
           <MotionLink
             to="/contact"
             {...hoverLift}
-            className="btn btn-primary bg-sunset-gold-500 hover:bg-sunset-gold-600 text-white text-sm"
+            className="btn btn-primary bg-royal-blue-500 hover:bg-royal-blue-600 text-white text-sm"
             onClick={() => setIsOpen(false)}
           >
             Plan Your Trip
@@ -100,7 +100,7 @@ export default function Navbar() {
                   key={link.name}
                   to={link.href}
                   {...hoverLift}
-                  className="block text-navy-900 font-medium hover:text-coral-500 transition-colors"
+                  className="block text-navy-900 font-medium hover:text-royal-blue-500 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
@@ -109,7 +109,7 @@ export default function Navbar() {
               <MotionLink
                 to="/contact"
                 {...hoverLift}
-                className="block btn bg-sunset-gold-500 hover:bg-sunset-gold-600 text-white w-full text-center"
+                className="block btn bg-royal-blue-500 hover:bg-royal-blue-600 text-white w-full text-center"
                 onClick={() => setIsOpen(false)}
               >
                 Plan Your Trip

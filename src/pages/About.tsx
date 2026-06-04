@@ -26,9 +26,9 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="text-center mb-20">
-          <span className="text-coral-500 text-xs font-bold uppercase tracking-widest">Our Philosophy</span>
+          <span className="text-royal-blue-500 text-xs font-bold uppercase tracking-widest">Our Philosophy</span>
           <h1 className="font-display font-black text-navy-900 text-6xl md:text-7xl mt-3 leading-tight">
-            Be Lost in <span className="italic text-coral-500">Memories</span>
+            Be Lost in <span className="italic text-royal-blue-500">Memories</span>
           </h1>
           <p className="text-gray-600 text-xl mt-6 max-w-3xl mx-auto leading-relaxed">
             We believe you travel first to lose yourself, then to find yourself. Memories are timeless treasures of the heart — and the best part of memories is making them. We invest every effort in turning your dreams into reality.
@@ -37,7 +37,7 @@ export default function AboutPage() {
 
         <Reveal className="mb-20">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="text-coral-500 text-xs font-bold uppercase tracking-widest">About Us</span>
+            <span className="text-royal-blue-500 text-xs font-bold uppercase tracking-widest">About Us</span>
             <h2 className="font-display font-black text-navy-900 text-4xl md:text-5xl mt-4 leading-tight">
               Blue Mormon is luxury travel built for the curious and the adventurous.
             </h2>
@@ -49,7 +49,7 @@ export default function AboutPage() {
 
         <Reveal className="mb-20">
           <div className="text-center mb-12">
-            <span className="text-coral-500 text-xs font-bold uppercase tracking-widest">What We Do</span>
+            <span className="text-royal-blue-500 text-xs font-bold uppercase tracking-widest">What We Do</span>
             <h2 className="font-display font-black text-navy-900 text-4xl md:text-5xl mt-4 leading-tight">
               We create inspired travel experiences with precision and heart.
             </h2>
@@ -70,7 +70,7 @@ export default function AboutPage() {
               },
             ].map((service) => (
               <div key={service.title} className="p-8 rounded-3xl border border-gray-200 hover:border-coral-200 transition-all bg-white shadow-sm">
-                <div className="text-coral-500 font-bold text-xs uppercase tracking-[0.3em] mb-4">{service.title}</div>
+                <div className="text-royal-blue-500 font-bold text-xs uppercase tracking-[0.3em] mb-4">{service.title}</div>
                 <p className="text-gray-600 leading-relaxed">{service.desc}</p>
               </div>
             ))}
@@ -79,7 +79,7 @@ export default function AboutPage() {
 
         <Reveal className="mb-20">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <span className="text-coral-500 text-xs font-bold uppercase tracking-widest">How We Work</span>
+            <span className="text-royal-blue-500 text-xs font-bold uppercase tracking-widest">How We Work</span>
             <h2 className="font-display font-black text-navy-900 text-4xl md:text-5xl mt-4 leading-tight">
               A simple process designed for effortless planning.
             </h2>
@@ -98,7 +98,7 @@ export default function AboutPage() {
               { step: '4', title: 'Travel with Confidence', desc: 'Enjoy your trip with 24/7 support, local guidance, and seamless service from start to finish.' },
             ].map((step) => (
               <motion.div key={step.step} variants={itemFadeUp} className="p-8 rounded-3xl bg-gray-50 border border-gray-200">
-                <div className="w-12 h-12 rounded-full bg-coral-500 text-white font-display font-black flex items-center justify-center mb-5">{step.step}</div>
+                <div className="w-12 h-12 rounded-full bg-royal-blue-500 text-white font-display font-black flex items-center justify-center mb-5">{step.step}</div>
                 <h3 className="font-semibold text-navy-900 text-xl mb-3">{step.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{step.desc}</p>
               </motion.div>
@@ -117,9 +117,9 @@ export default function AboutPage() {
               <MotionImage src={ABOUT_IMG_2} alt="Local experience" className="w-full h-full object-cover" loading="lazy" />
             </div>
 
-            <div className="absolute top-8 -right-6 bg-coral-500 text-white rounded-2xl px-5 py-4 shadow-xl shadow-coral-500/30 hidden lg:block">
+            <div className="absolute top-8 -right-6 bg-royal-blue-500 text-white rounded-2xl px-5 py-4 shadow-xl shadow-coral-500/30 hidden lg:block">
               <div className="text-3xl font-display font-black">15+</div>
-              <div className="text-xs font-medium text-coral-100 mt-0.5">Years crafting<br/>journeys</div>
+              <div className="text-xs font-medium text-royal-blue-100 mt-0.5">Years crafting<br/>journeys</div>
             </div>
           </Reveal>
 
@@ -144,7 +144,7 @@ export default function AboutPage() {
                 'One-stop shop: visas, insurance, forex, international SIM cards',
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-coral-500 flex-shrink-0" />
+                  <div className="w-2 h-2 rounded-full bg-royal-blue-500 flex-shrink-0" />
                   <span className="text-gray-700 font-medium">{item}</span>
                 </div>
               ))}
@@ -152,7 +152,7 @@ export default function AboutPage() {
 
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-navy-900 hover:bg-coral-500 text-white font-bold rounded-full transition-all duration-300 hover:-translate-y-1"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-navy-900 hover:bg-royal-blue-500 text-white font-bold rounded-full transition-all duration-300 hover:-translate-y-1"
             >
               Start Your Journey &rarr;
             </a>
@@ -173,13 +173,13 @@ export default function AboutPage() {
                 {timeline.map((item, i) => (
                   <motion.div key={item.year} variants={itemFadeUp} className="flex gap-8 mb-8 last:mb-0">
                     <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 rounded-full bg-coral-100 flex items-center justify-center font-display font-bold text-coral-600 flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-royal-blue-100 flex items-center justify-center font-display font-bold text-royal-blue-600 flex-shrink-0">
                         {item.year.slice(2)}
                       </div>
-                      {i < timeline.length - 1 && <div className="w-0.5 h-16 bg-gradient-to-b from-coral-200 to-gray-200 mt-2" />}
+                      {i < timeline.length - 1 && <div className="w-0.5 h-16 bg-gradient-to-b from-royal-blue-200 to-gray-200 mt-2" />}
                     </div>
                     <div className="pb-8">
-                      <div className="font-bold text-coral-600 text-sm uppercase tracking-wide">{item.year}</div>
+                      <div className="font-bold text-royal-blue-600 text-sm uppercase tracking-wide">{item.year}</div>
                       <p className="text-gray-700 mt-1">{item.event}</p>
                     </div>
                   </motion.div>
@@ -214,8 +214,8 @@ export default function AboutPage() {
                   { title: 'Quality', desc: 'Every detail matters — we never compromise.' },
                   { title: 'Flexibility', desc: 'Your trip, your way. Always.' },
                 ].map((v) => (
-                  <Reveal key={v.title} className="p-6 rounded-2xl bg-gray-50 hover:bg-coral-50 transition-colors group">
-                    <div className="w-3 h-3 rounded-full bg-coral-500 mb-4 group-hover:scale-150 transition-transform" />
+                  <Reveal key={v.title} className="p-6 rounded-2xl bg-gray-50 hover:bg-royal-blue-50 transition-colors group">
+                    <div className="w-3 h-3 rounded-full bg-royal-blue-500 mb-4 group-hover:scale-150 transition-transform" />
                     <h4 className="font-semibold text-navy-900 text-lg mb-2">{v.title}</h4>
                     <p className="text-gray-600 text-sm leading-relaxed">{v.desc}</p>
                   </Reveal>
@@ -253,7 +253,7 @@ export default function AboutPage() {
                   />
                 </div>
                 <h4 className="font-display font-bold text-lg">{member.name}</h4>
-                <p className="text-coral-400 text-sm font-semibold mb-1">{member.role}</p>
+                <p className="text-royal-blue-400 text-sm font-semibold mb-1">{member.role}</p>
                 <p className="text-white/50 text-xs">{member.expertise}</p>
               </motion.div>
             ))}
@@ -267,8 +267,8 @@ export default function AboutPage() {
             { value: '80+', label: 'Destinations' },
             { value: '4.9★', label: 'Avg Rating' },
           ].map((s) => (
-            <Reveal key={s.label} className="text-center p-8 bg-gradient-to-br from-coral-50 to-ocean-50 rounded-2xl">
-              <div className="font-display font-black text-4xl text-coral-500 mb-2">{s.value}</div>
+            <Reveal key={s.label} className="text-center p-8 bg-gradient-to-br from-royal-blue-50 to-ocean-50 rounded-2xl">
+              <div className="font-display font-black text-4xl text-royal-blue-500 mb-2">{s.value}</div>
               <div className="text-gray-600 font-medium text-sm">{s.label}</div>
             </Reveal>
           ))}

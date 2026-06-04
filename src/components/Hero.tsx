@@ -54,7 +54,7 @@ export default function Hero() {
             <MotionLink
               to="/packages"
               {...hoverLift}
-              className="btn btn-primary bg-sunset-gold-500 hover:bg-sunset-gold-600 text-white border-0"
+              className="btn btn-primary bg-royal-blue-500 hover:bg-royal-blue-600 text-white border-0"
             >
               Explore Packages <ArrowRight size={18} />
             </MotionLink>

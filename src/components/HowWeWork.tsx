@@ -30,7 +30,7 @@ export default function HowWeWork() {
     <section className="section bg-gray-50">
       <div className="container-premium">
         <Reveal className="text-center mb-16">
-          <p className="text-small text-coral-500 mb-4">OUR PROCESS</p>
+          <p className="text-small text-royal-blue-500 mb-4">OUR PROCESS</p>
           <h2 className="mb-6">How We Create Your Journey</h2>
           <p className="text-lg text-muted max-w-2xl mx-auto">
             From your first consultation to the memories that last a lifetime, here's how we work.
@@ -50,11 +50,11 @@ export default function HowWeWork() {
               <motion.div
                 key={idx}
                 variants={itemFadeUp}
-                className="flex flex-col items-center text-center rounded-3xl bg-white p-8 shadow-premium border border-gray-100 hover:border-coral-200 transition-all duration-300"
+                className="flex flex-col items-center text-center rounded-3xl bg-white p-8 shadow-premium border border-gray-100 hover:border-royal-blue-200 transition-all duration-300"
                 {...hoverLift}
               >
-                <div className="w-16 h-16 rounded-full bg-coral-500/10 flex items-center justify-center mb-6 relative z-10">
-                  <Icon className="w-8 h-8 text-coral-500" strokeWidth={1.5} />
+                <div className="w-16 h-16 rounded-full bg-royal-blue-500/10 flex items-center justify-center mb-6 relative z-10">
+                  <Icon className="w-8 h-8 text-royal-blue-500" strokeWidth={1.5} />
                 </div>
 
                 <div className="text-5xl font-light text-gray-200 mb-4">{idx + 1}</div>
@@ -84,7 +84,7 @@ export default function HowWeWork() {
               variants={itemFadeUp}
               className="card p-8 text-center bg-white shadow-premium border border-gray-100 hover:shadow-premium-lg transition-all duration-300"
             >
-              <div className="text-4xl font-bold text-coral-500 mb-3">{item.value}</div>
+              <div className="text-4xl font-bold text-royal-blue-500 mb-3">{item.value}</div>
               <p className="text-sm font-light text-muted">{item.label}</p>
             </motion.div>
           ))}
