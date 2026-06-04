@@ -200,6 +200,55 @@ export default function PackagesPage() {
           ))}
         </motion.div>
 
+        <section className="mb-14 rounded-[2rem] bg-white border border-gray-200/80 shadow-premium p-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
+            <div>
+              <span className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.4em] text-royal-blue-700 bg-royal-blue-100 rounded-full px-4 py-2">
+                🔥 Trending
+              </span>
+              <h2 className="mt-4 text-4xl md:text-5xl font-display font-black text-navy-900 tracking-tight">
+                Most Loved by Indian Travellers
+              </h2>
+              <p className="max-w-2xl mt-4 text-gray-600 text-base leading-relaxed font-light">
+                Discover the destinations Indian explorers keep coming back to — curated with the perfect mix of luxury, culture and unforgettable moments.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="inline-flex items-center gap-2 rounded-full bg-royal-blue-50 text-royal-blue-700 px-4 py-2 text-sm font-semibold shadow-sm">
+                ⭐ Family Favourite
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full bg-sunset-gold-100 text-sunset-gold-700 px-4 py-2 text-sm font-semibold shadow-sm">
+                ❤️ Best Seller
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { city: 'Dubai', badge: 'Iconic Luxury' },
+              { city: 'Bali', badge: 'Island Bliss' },
+              { city: 'Thailand', badge: 'Vibrant Escape' },
+              { city: 'Kashmir', badge: 'Himalayan Retreat' },
+              { city: 'Kedarnath', badge: 'Spiritual Trek' },
+              { city: 'Switzerland', badge: 'Alpine Dream' },
+            ].map((item) => (
+              <div key={item.city} className="rounded-3xl border border-gray-200/70 bg-slate-50 p-6 shadow-sm hover:shadow-premium transition-all duration-300">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-semibold text-navy-900">{item.city}</h3>
+                  <span className="text-xs uppercase tracking-[0.3em] font-black text-white bg-royal-blue-700 rounded-full px-3 py-1">
+                    Trending
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600 mb-6">{item.badge}</p>
+                <div className="inline-flex items-center gap-2 text-sm font-semibold text-royal-blue-700">
+                  <span className="text-xl">🔥</span>
+                  Popular choice for Indian travellers
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <div className="text-center mb-24">
           <MotionLink
             to="/contact"
