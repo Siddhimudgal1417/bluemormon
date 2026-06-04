@@ -160,46 +160,68 @@ export default function AboutPage() {
         </div>
 
         <Reveal className="mb-24 py-16 border-y border-gray-200">
-          <h2 className="font-display font-bold text-navy-900 text-4xl mb-12 text-center">Our Journey</h2>
-          <motion.div
-            className="max-w-4xl mx-auto"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            {timeline.map((item, i) => (
-              <motion.div key={item.year} variants={itemFadeUp} className="flex gap-8 mb-8 last:mb-0">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-coral-100 flex items-center justify-center font-display font-bold text-coral-600 flex-shrink-0">
-                    {item.year.slice(2)}
-                  </div>
-                  {i < timeline.length - 1 && <div className="w-0.5 h-16 bg-gradient-to-b from-coral-200 to-gray-200 mt-2" />}
-                </div>
-                <div className="pb-8">
-                  <div className="font-bold text-coral-600 text-sm uppercase tracking-wide">{item.year}</div>
-                  <p className="text-gray-700 mt-1">{item.event}</p>
-                </div>
+          <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:items-center gap-12">
+            <div>
+              <h2 className="font-display font-bold text-navy-900 text-4xl mb-12 text-center">Our Journey</h2>
+              <motion.div
+                className="max-w-4xl mx-auto"
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                {timeline.map((item, i) => (
+                  <motion.div key={item.year} variants={itemFadeUp} className="flex gap-8 mb-8 last:mb-0">
+                    <div className="flex flex-col items-center">
+                      <div className="w-12 h-12 rounded-full bg-coral-100 flex items-center justify-center font-display font-bold text-coral-600 flex-shrink-0">
+                        {item.year.slice(2)}
+                      </div>
+                      {i < timeline.length - 1 && <div className="w-0.5 h-16 bg-gradient-to-b from-coral-200 to-gray-200 mt-2" />}
+                    </div>
+                    <div className="pb-8">
+                      <div className="font-bold text-coral-600 text-sm uppercase tracking-wide">{item.year}</div>
+                      <p className="text-gray-700 mt-1">{item.event}</p>
+                    </div>
+                  </motion.div>
+                ))}
               </motion.div>
-            ))}
-          </motion.div>
+            </div>
+
+            <div className="hidden lg:block">
+              <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl">
+                <MotionImage src={ABOUT_IMG_3} alt="Our journey visual" className="w-full h-full object-cover" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent" />
+              </div>
+            </div>
+          </div>
         </Reveal>
 
         <Reveal className="mb-24">
-          <h2 className="font-display font-bold text-navy-900 text-4xl mb-12 text-center">Our Values</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: 'Authenticity', desc: 'Real experiences with real people. No staged tours.' },
-              { title: 'Responsibility', desc: 'We give back to communities we visit.' },
-              { title: 'Quality', desc: 'Every detail matters — we never compromise.' },
-              { title: 'Flexibility', desc: 'Your trip, your way. Always.' },
-            ].map((v) => (
-              <Reveal key={v.title} className="p-6 rounded-2xl bg-gray-50 hover:bg-coral-50 transition-colors group">
-                <div className="w-3 h-3 rounded-full bg-coral-500 mb-4 group-hover:scale-150 transition-transform" />
-                <h4 className="font-semibold text-navy-900 text-lg mb-2">{v.title}</h4>
-                <p className="text-gray-600 text-sm leading-relaxed">{v.desc}</p>
-              </Reveal>
-            ))}
+          <div className="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:items-center gap-12">
+            <div className="hidden lg:block">
+              <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl">
+                <MotionImage src={ABOUT_IMG_2} alt="Our values visual" className="w-full h-full object-cover" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/10 to-transparent" />
+              </div>
+            </div>
+
+            <div>
+              <h2 className="font-display font-bold text-navy-900 text-4xl mb-12 text-center">Our Values</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  { title: 'Authenticity', desc: 'Real experiences with real people. No staged tours.' },
+                  { title: 'Responsibility', desc: 'We give back to communities we visit.' },
+                  { title: 'Quality', desc: 'Every detail matters — we never compromise.' },
+                  { title: 'Flexibility', desc: 'Your trip, your way. Always.' },
+                ].map((v) => (
+                  <Reveal key={v.title} className="p-6 rounded-2xl bg-gray-50 hover:bg-coral-50 transition-colors group">
+                    <div className="w-3 h-3 rounded-full bg-coral-500 mb-4 group-hover:scale-150 transition-transform" />
+                    <h4 className="font-semibold text-navy-900 text-lg mb-2">{v.title}</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">{v.desc}</p>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
           </div>
         </Reveal>
 

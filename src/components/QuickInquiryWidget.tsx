@@ -26,7 +26,7 @@ export default function QuickInquiryWidget() {
   };
 
   return (
-    <div className="fixed inset-x-4 bottom-4 z-50 flex justify-end sm:inset-x-auto sm:right-5">
+    <div className="fixed bottom-4 right-4 z-50 flex justify-end">
       <div className="relative w-full max-w-[420px]">
         <AnimatePresence>
           {isOpen && (

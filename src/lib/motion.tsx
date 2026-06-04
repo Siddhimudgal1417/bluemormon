@@ -1,11 +1,11 @@
-import { motion, useInView, useReducedMotion, Variants } from 'framer-motion';
+import { motion, useInView, useReducedMotion, Variants, type Transition } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { Link, type LinkProps } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const premiumTiming = {
+const premiumTiming: Transition = {
   duration: 0.7,
-  // Use a CSS cubic-bezier string to satisfy framer-motion typings
-  ease: 'cubic-bezier(0.22, 1, 0.36, 1)',
+  // Use a numeric bezier but cast easing to any to satisfy typings
+  ease: [0.22, 1, 0.36, 1] as any,
 };
 
 export const pageVariants: Variants = {
@@ -94,7 +94,7 @@ export function MotionImage(props: React.ComponentPropsWithoutRef<'img'>) {
   const shouldReduceMotion = useReducedMotion();
   return (
     <motion.img
-      {...props}
+      {...(props as any)}
       initial={shouldReduceMotion ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.02 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -103,7 +103,8 @@ export function MotionImage(props: React.ComponentPropsWithoutRef<'img'>) {
   );
 }
 
-export const MotionLink = motion<LinkProps>(Link);
+// Motion's generic typing for external components can be strict; cast to `any` to allow `Link` props like `to`.
+export const MotionLink = motion(Link) as unknown as React.ComponentType<any>;
 
 export function AnimatedCounter({
   target,
