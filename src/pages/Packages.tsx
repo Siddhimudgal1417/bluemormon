@@ -14,7 +14,7 @@ const packages = [
     price: 3_490,
     tag: 'Bestseller',
     tagColor: 'bg-royal-blue-800',
-    img: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
+    img: 'https://media.istockphoto.com/id/2252565701/photo/scuba-diver-encountering-a-thrilling-group-of-spotted-eagle-rays-in-clear-blue-water-swimming.jpg?s=1024x1024&w=is&k=20&c=J6ruU7s1W4nqXqRx4SQuZ4hz4TFBm7hD21XMaZRSjis=',
     highlights: ['Overwater bungalow', 'Dolphin cruise', 'Snorkeling reef'],
   },
   {
@@ -28,7 +28,7 @@ const packages = [
     price: 2_190,
     tag: 'Most Popular',
     tagColor: 'bg-royal-blue-800',
-    img: 'https://images.pexels.com/photos/2474690/pexels-photo-2474690.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
+    img: 'https://images.unsplash.com/photo-1557093793-d149a38a1be8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFsaSUyMHRvdXIlMjBzcG90cyUyMHdpdGglMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D',
     highlights: ['Sunrise Volcano trek', 'Ubud rice terraces', 'Spa & Yoga retreat'],
   },
   {
@@ -225,14 +225,42 @@ export default function PackagesPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { city: 'Dubai', badge: 'Iconic Luxury' },
-              { city: 'Bali', badge: 'Island Bliss' },
-              { city: 'Thailand', badge: 'Vibrant Escape' },
-              { city: 'Kashmir', badge: 'Himalayan Retreat' },
-              { city: 'Kedarnath', badge: 'Spiritual Trek' },
-              { city: 'Switzerland', badge: 'Alpine Dream' },
+              {
+                city: 'Dubai',
+                badge: 'Iconic Luxury',
+                img: 'https://images.unsplash.com/photo-1667592441284-b590021411e3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              },
+              {
+                city: 'Bali',
+                badge: 'Island Bliss',
+                img: 'https://images.unsplash.com/photo-1542897643-8158da5b4607?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              },
+              {
+                city: 'Thailand',
+                badge: 'Vibrant Escape',
+                img: 'https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
+              },
+              {
+                city: 'Kashmir',
+                badge: 'Himalayan Retreat',
+                img: 'https://images.unsplash.com/photo-1685716271205-83a5ac2ba63b?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              },
+              {
+                city: 'Kedarnath',
+                badge: 'Spiritual Trek',
+                img: 'https://images.unsplash.com/photo-1612438214708-f428a707dd4e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              },
+              {
+                city: 'Switzerland',
+                badge: 'Alpine Dream',
+                img: 'https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
+              },
             ].map((item) => (
               <div key={item.city} className="rounded-3xl border border-gray-200/70 bg-slate-50 p-6 shadow-sm hover:shadow-premium transition-all duration-300">
+                <div className="relative rounded-xl overflow-hidden mb-4 h-40 bg-gray-100">
+                  <MotionImage src={item.img} alt={item.city} className="w-full h-full object-cover" loading="lazy" />
+                </div>
+
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-semibold text-navy-900">{item.city}</h3>
                   <span className="text-xs uppercase tracking-[0.3em] font-black text-white bg-royal-blue-700 rounded-full px-3 py-1">

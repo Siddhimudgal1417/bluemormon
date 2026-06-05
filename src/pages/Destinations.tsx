@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { Reveal, itemFadeUp, staggerContainer, MotionImage } from '../lib/motion';
 
 const allDestinations = [
-  { name: 'Maldives', img: 'https://images.pexels.com/photos/1483053/pexels-photo-1483053.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Asia', vibe: 'Luxury', desc: 'Overwater villas, pristine reefs, pure paradise.' },
-  { name: 'Bali', img: 'https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Asia', vibe: 'Adventure', desc: 'Temples, rice terraces, yoga retreats, jungle vibes.' },
+  { name: 'Maldives', img: 'https://media.istockphoto.com/id/675582842/photo/sea-in-maldives.jpg?s=1024x1024&w=is&k=20&c=7Bbe7JuE3CRYKS2VWnTNFy4s3EfeTu1i9xCaSkRQejw=', region: 'Asia', vibe: 'Luxury', desc: 'Overwater villas, pristine reefs, pure paradise.' },
+  { name: 'Bali', img: 'https://images.unsplash.com/photo-1592364395653-83e648b20cc2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', region: 'Asia', vibe: 'Adventure', desc: 'Temples, rice terraces, yoga retreats, jungle vibes.' },
   { name: 'Santorini', img: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Europe', vibe: 'Romance', desc: 'Iconic sunsets, white-washed villages, caldera views.' },
-  { name: 'Phuket', img: 'https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Asia', vibe: 'Beach', desc: 'Island hopping, night markets, tropical beaches.' },
+  { name: 'Phuket', img: 'https://images.unsplash.com/photo-1687842542880-0f42a42f89a9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', region: 'Asia', vibe: 'Beach', desc: 'Island hopping, night markets, tropical beaches.' },
   { name: 'Amalfi Coast', img: 'https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Europe', vibe: 'Romance', desc: 'Dramatic cliffs, charming villages, Italian cuisine.' },
   { name: 'Zanzibar', img: 'https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Africa', vibe: 'Adventure', desc: 'Spice markets, historic towns, pristine beaches.' },
   { name: 'Kyoto', img: 'https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Asia', vibe: 'Culture', desc: 'Ancient temples, bamboo groves, cherry blossoms.' },
@@ -15,7 +15,7 @@ const allDestinations = [
   { name: 'Morocco', img: 'https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Africa', vibe: 'Culture', desc: 'Medinas, deserts, mountains, and souks.' },
   { name: 'Iceland', img: 'https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Europe', vibe: 'Adventure', desc: 'Waterfalls, geysers, glaciers, northern lights.' },
   { name: 'Thailand', img: 'https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Asia', vibe: 'Beach', desc: 'Temples, markets, beaches, and vibrant culture.' },
-  { name: 'Portugal', img: 'https://images.pexels.com/photos/1075318/pexels-photo-1075318.jpeg?auto=compress&cs=tinysrgb&w=600&q=80', region: 'Europe', vibe: 'Romance', desc: 'Coastal cliffs, historic tiles, wine country.' },
+  { name: 'Manali', img: 'https://media.istockphoto.com/id/2272953739/photo/a-traditional-wooden-temple-in-a-mountainous-region-of-india-surrounded-by-trees-and-greenery.jpg?s=1024x1024&w=is&k=20&c=4A-toKIYuDFgwIJr0DpTjDTNiCI6RrurCYM7NOLEOt0=', region: 'Asia', vibe: 'Romance', desc: 'Coastal cliffs, historic tiles, wine country.' },
 ];
 
 const regions = ['All', ...new Set(allDestinations.map((d) => d.region))];
