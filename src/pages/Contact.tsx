@@ -144,7 +144,7 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 border border-tropical-teal-200 bg-white/50 rounded-xl focus:outline-none focus:border-tropical-teal-500 focus:ring-2 focus:ring-tropical-teal-200 transition-all"
-                          placeholder="Sofia Marques"
+                          placeholder="Naina Talwar"
                         />
                       </motion.div>
                       <motion.div variants={itemFadeUp}>
@@ -156,7 +156,7 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 border border-tropical-teal-200 bg-white/50 rounded-xl focus:outline-none focus:border-tropical-teal-500 focus:ring-2 focus:ring-tropical-teal-200 transition-all"
-                          placeholder="you@example.com"
+                          placeholder="nainatalwar@gmail.com"
                         />
                       </motion.div>
                     </motion.div>
@@ -170,7 +170,7 @@ export default function ContactPage() {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3 border border-tropical-teal-200 bg-white/50 rounded-xl focus:outline-none focus:border-tropical-teal-500 focus:ring-2 focus:ring-tropical-teal-200 transition-all"
-                          placeholder="+91 XXXXX XXXXX"
+                          placeholder="+91 7346785322"
                         />
                       </motion.div>
                       <motion.div variants={itemFadeUp}>
