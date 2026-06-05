@@ -156,7 +156,7 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 border border-tropical-teal-200 bg-white/50 rounded-xl focus:outline-none focus:border-tropical-teal-500 focus:ring-2 focus:ring-tropical-teal-200 transition-all"
-                          placeholder="nainatalwar@gmail.com"
+                          placeholder="nainatalwar@example.com"
                         />
                       </motion.div>
                     </motion.div>
@@ -170,7 +170,7 @@ export default function ContactPage() {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3 border border-tropical-teal-200 bg-white/50 rounded-xl focus:outline-none focus:border-tropical-teal-500 focus:ring-2 focus:ring-tropical-teal-200 transition-all"
-                          placeholder="+91 7346785322"
+                          placeholder="+91 xxxxx xxxxx"
                         />
                       </motion.div>
                       <motion.div variants={itemFadeUp}>
@@ -202,7 +202,7 @@ export default function ContactPage() {
                         required
                         rows={5}
                         className="w-full px-4 py-3 border border-tropical-teal-200 bg-white/50 rounded-xl focus:outline-none focus:border-tropical-teal-500 focus:ring-2 focus:ring-tropical-teal-200 transition-all resize-none"
-                        placeholder="Share your travel dreams — when you want to go, who you're traveling with, budget, interests, etc."
+                        placeholder="Mai udna chahta hu, daudna chahta hu, girna bhi chahta hu… bas, rukna nahi chahta."
                       />
                     </motion.div>
 
