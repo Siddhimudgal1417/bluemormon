@@ -8,18 +8,18 @@ const MotionLink = motion(Link);
 const heroImages = [
   {
     src: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80"',
-    alt: 'Tropical destination',
+    alt: 'Tropical Destination',
     className: 'absolute inset-0 w-full h-full object-cover',
   },
   {
     src: 'https://images.pexels.com/photos/2474690/pexels-photo-2474690.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
-    alt: 'Beach retreat',
-    className: 'hidden md:block absolute top-16 left-8 w-72 h-80 rounded-[2rem] object-cover shadow-2xl ring-4 ring-white/70',
+    alt: 'Kerala',
+    className: 'absolute inset-0 w-full h-full object-cover',
   },
   {
     src: 'https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
-    alt: 'Island escape',
-    className: 'hidden lg:block absolute bottom-16 right-8 w-72 h-80 rounded-[2rem] object-cover shadow-2xl ring-4 ring-white/70',
+    alt: 'Ladakh',
+    className: 'absolute inset-0 w-full h-full object-cover',
   },
 ];
 
@@ -99,3 +99,4 @@ export default function Hero() {
     </section>
   );
 }
+
