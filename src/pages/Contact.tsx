@@ -10,7 +10,7 @@ export default function ContactPage() {
   const formRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const observers = [headerRef, formRef].map((ref, i) => {
+    const observers = [headerRef, formRef].map((ref, _i) => {
       const el = ref.current;
       if (!el) return null;
       const obs = new IntersectionObserver(
@@ -86,7 +86,7 @@ export default function ContactPage() {
                 detail: 'Office No-20, Bhosle-Shinde Arcade',
                 subdesc: 'Deccan, Pune - 411004, India',
               },
-            ].map((contact, i) => {
+            ].map((contact, _i) => {
               const Icon = contact.icon;
               return (
                 <motion.div key={contact.title} variants={itemFadeUp} className="group">

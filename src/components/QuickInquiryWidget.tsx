@@ -70,7 +70,7 @@ export default function QuickInquiryWidget() {
                         onChange={handleChange}
                         required
                         className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-navy-900 outline-none transition focus:border-sunset-gold-400 focus:ring-2 focus:ring-sunset-gold-100"
-                        placeholder="Aarav Sharma"
+                        placeholder="Akash Malhotra"
                       />
                     </div>
                     <div>
@@ -92,7 +92,7 @@ export default function QuickInquiryWidget() {
                         value={form.destination}
                         onChange={handleChange}
                         className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-navy-900 outline-none transition focus:border-sunset-gold-400 focus:ring-2 focus:ring-sunset-gold-100"
-                        placeholder="Maldives, Bali, or Europe"
+                        placeholder="Maldives, Bali, or Sydney"
                       />
                     </div>
                     <div>
@@ -103,7 +103,7 @@ export default function QuickInquiryWidget() {
                         onChange={handleChange}
                         rows={3}
                         className="w-full resize-none rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-navy-900 outline-none transition focus:border-sunset-gold-400 focus:ring-2 focus:ring-sunset-gold-100"
-                        placeholder="Tell us who you are traveling with, when, and what matters most."
+                        placeholder="Kitni ajeeb baat hai... hum teeno Sydney ja rahe hai. Tum, main, aur yeh flight."
                       />
                     </div>
                     <button
