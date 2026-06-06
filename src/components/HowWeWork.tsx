@@ -78,7 +78,7 @@ export default function HowWeWork() {
             { value: '48h', label: 'Average response time for custom itinerary proposals' },
             { value: '100%', label: 'Personalized experiences designed specifically for you' },
             { value: '360°', label: 'Complete support from planning through memories' },
-          ].map((item, idx) => (
+          ].map((item) => (
             <motion.div
               key={item.label}
               variants={itemFadeUp}

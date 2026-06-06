@@ -39,7 +39,7 @@ export default function NavigationCards() {
     {
       title: 'Get in Touch',
       description: 'Begin your journey with a personal consultation',
-      image: 'https://images.pexels.com/photos/1180615/pexels-photo-1180615.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
+      image: 'https://content3.jdmagicbox.com/comp/pune/g9/020pxx20.xx20.140305171715.t9g9/catalogue/blue-mormon-travelopedia-deccan-gymkhana-pune-tour-packages-mpyewjgykw.jpg',
       href: '/contact',
     },
   ];

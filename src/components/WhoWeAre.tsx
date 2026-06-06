@@ -9,12 +9,6 @@ const stats = [
   { end: 99, suffix: '%', label: 'Satisfaction Rate' },
 ];
 
-const team = [
-  { name: 'Sofia Reis', role: 'Founder & CEO', img: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200&q=80', expertise: 'Asia Specialist' },
-  { name: 'Marco Rossi', role: 'Head of Experiences', img: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=200&q=80', expertise: 'Adventure Travel' },
-  { name: 'Emma Watson', role: 'Operations Manager', img: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200&q=80', expertise: 'Luxury Travel' },
-  { name: 'Liam Chen', role: 'Travel Consultant', img: 'https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=200&q=80', expertise: 'Europe Expert' },
-];
 
 export default function WhoWeAre() {
   return (
@@ -24,7 +18,7 @@ export default function WhoWeAre() {
           <Reveal className="relative">
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl">
               <MotionImage
-                src="https://images.pexels.com/photos/1121598/pexels-photo-1121598.jpeg?auto=compress&cs=tinysrgb&w=800&q=80"
+                src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAE_NpGxO4k34LKHWWvaG151BDGjFPbsOpy2vBx8SAikYhU7xiai3EBOxv2krusHZ5oiCk7WfTcdLGNFEHtlZK0YEtqYw_Mc93pPqZuhn8FIXpwLwpGAStA_uqFPHqxVQ-qd1rw=s1360-w1360-h1020-rw"
                 alt="Blue Mormon Team"
                 className="w-full h-full object-cover"
               />
