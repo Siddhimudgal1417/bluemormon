@@ -69,7 +69,7 @@ export default function Hero() {
             <MotionLink
               to="/contact"
               {...hoverLift}
-              className="btn btn-secondary text-white border-white hover:bg-white hover:text-navy-900"
+              className="btn btn-primary bg-navy-700 hover:bg-navy-700 text-white border-white hover:bg-white hover:text-navy-900"
             >
               Plan Your Trip
             </MotionLink>
