@@ -11,16 +11,6 @@ const heroImages = [
     alt: 'Tropical Destination',
     className: 'absolute inset-0 w-full h-full object-cover',
   },
-  {
-    src: 'https://images.pexels.com/photos/2474690/pexels-photo-2474690.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
-    alt: 'Kerala',
-    className: 'absolute inset-0 w-full h-full object-cover',
-  },
-  {
-    src: 'https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
-    alt: 'Ladakh',
-    className: 'absolute inset-0 w-full h-full object-cover',
-  },
 ];
 
 export default function Hero() {
