@@ -1,7 +1,7 @@
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Reveal, MotionImage, itemFadeUp, staggerContainer, hoverLift } from '../lib/motion';
+import { Reveal, itemFadeUp, staggerContainer, hoverLift } from '../lib/motion';
 
 const MotionLink = motion(Link);
 

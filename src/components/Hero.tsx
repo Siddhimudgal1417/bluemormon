@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -7,18 +8,45 @@ const MotionLink = motion(Link);
 
 const heroImages = [
   {
-    src: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80"',
-    alt: 'Tropical Destination',
+    src: 'https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80',
+    alt: 'Kerala',
+    className: 'absolute inset-0 w-full h-full object-cover',
+  },
+  {
+    src: 'https://images.pexels.com/photos/27497828/pexels-photo-27497828.jpeg',
+    alt: 'Kashmir',
+    className: 'absolute inset-0 w-full h-full object-cover',
+  },
+  {
+    src: 'https://images.pexels.com/photos/33782200/pexels-photo-33782200.jpeg',
+    alt: 'Mountain Vista',
     className: 'absolute inset-0 w-full h-full object-cover',
   },
 ];
 
 export default function Hero() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative h-screen w-full overflow-hidden pt-20">
       <div className="absolute inset-0">
-        {heroImages.map((image) => (
-          <MotionImage key={image.src} src={image.src} alt={image.alt} className={image.className} />
+        {heroImages.map((image, index) => (
+          <motion.div
+            key={image.src}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: index === currentIndex ? 1 : 0 }}
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0"
+          >
+            <MotionImage src={image.src} alt={image.alt} className={image.className} />
+          </motion.div>
         ))}
       </div>
 
@@ -89,4 +117,3 @@ export default function Hero() {
     </section>
   );
 }
-
